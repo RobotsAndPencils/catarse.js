@@ -91,25 +91,25 @@ window.c.AdminProjectDetailsCard = ((m, h, moment) => {
                                 ]),
                                 m('.w-row', [
                                     m('.w-col.w-col-3.w-col-small-3.w-col-tiny-6', [
-                                        m('.fontcolor-secondary.lineheight-tighter.fontsize-small', 'financiado'),
+                                        m('.fontcolor-secondary.lineheight-tighter.fontsize-small', 'funded'),
                                         m('.fontweight-semibold.fontsize-large.lineheight-tight', progress + '%')
                                     ]),
                                     m('.w-col.w-col-3.w-col-small-3.w-col-tiny-6', [
-                                        m('.fontcolor-secondary.lineheight-tighter.fontsize-small', 'levantados'),
+                                        m('.fontcolor-secondary.lineheight-tighter.fontsize-small', 'raised'),
                                         m('.fontweight-semibold.fontsize-large.lineheight-tight', [
                                             'R$ ' + h.formatNumber(project.pledged, 2),
                                         ]),
                                     ]),
                                     m('.w-col.w-col-3.w-col-small-3.w-col-tiny-6', [
-                                        m('.fontcolor-secondary.lineheight-tighter.fontsize-small', 'apoios'),
+                                        m('.fontcolor-secondary.lineheight-tighter.fontsize-small', 'contributions'),
                                         m('.fontweight-semibold.fontsize-large.lineheight-tight', project.total_contributions)
                                     ]),
                                     m('.w-col.w-col-3.w-col-small-3.w-col-tiny-6', [
                                         (_.isNull(project.expires_at) ? [
-                                            m('.fontcolor-secondary.lineheight-tighter.fontsize-small', 'iniciado há'),
+                                            m('.fontcolor-secondary.lineheight-tighter.fontsize-small', 'starting in'),
                                             m('.fontweight-semibold.fontsize-large.lineheight-tight', elapsedTextObj.total + ' ' + elapsedTextObj.unit)
                                         ] : [
-                                             m('.fontcolor-secondary.lineheight-tighter.fontsize-small', 'restam'),
+                                             m('.fontcolor-secondary.lineheight-tighter.fontsize-small', 'left'),
                                              m('.fontweight-semibold.fontsize-large.lineheight-tight', remainingTextObj.total + ' ' + remainingTextObj.unit)
                                          ])
                                     ])
