@@ -16,35 +16,35 @@ window.c.AdminProjectDetailsCard = ((m, h, moment) => {
                         statusText = {
                             online: {
                                 cssClass: 'text-success',
-                                text: 'NO AR'
+                                text: 'ONLINE'
                             },
                             successful: {
                                 cssClass: 'text-success',
-                                text: 'FINANCIADO'
+                                text: 'SUCCESSFUL'
                             },
                             failed: {
                                 cssClass: 'text-error',
-                                text: 'NÃO FINANCIADO'
+                                text: 'FAILED'
                             },
                             waiting_funds: {
                                 cssClass: 'text-waiting',
-                                text: 'AGUARDANDO'
+                                text: 'WAITING'
                             },
                             rejected: {
                                 cssClass: 'text-error',
-                                text: 'RECUSADO'
+                                text: 'REJECTED'
                             },
                             draft: {
                                 cssClass: '',
-                                text: 'RASCUNHO'
+                                text: 'DRAFT'
                             },
                             in_analysis: {
                                 cssClass: '',
-                                text: 'EM ANÁLISE'
+                                text: 'IN ANALYSIS'
                             },
                             approved: {
                                 cssClass: 'text-success',
-                                text: 'APROVADO'
+                                text: 'APPROVED'
                             }
                         };
 

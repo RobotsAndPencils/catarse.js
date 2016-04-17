@@ -18,7 +18,7 @@ describe('AdminProjectDetailsCard', () => {
                 ctrl = generateController({
                     state: 'online'
                 });
-                expect(ctrl.statusTextObj().text).toEqual('NO AR');
+                expect(ctrl.statusTextObj().text).toEqual('ONLINE');
                 expect(ctrl.statusTextObj().cssClass).toEqual('text-success');
             });
 
@@ -26,7 +26,7 @@ describe('AdminProjectDetailsCard', () => {
                 ctrl = generateController({
                     state: 'failed'
                 });
-                expect(ctrl.statusTextObj().text).toEqual('NÃO FINANCIADO');
+                expect(ctrl.statusTextObj().text).toEqual('FAILED');
                 expect(ctrl.statusTextObj().cssClass).toEqual('text-error');
             });
         });
