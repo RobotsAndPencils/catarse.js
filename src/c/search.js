@@ -9,7 +9,7 @@
 window.c.Search = ((m) => {
     return {
         view: (ctrl, args = {}) => {
-            let action = args.action || '/pt/explore',
+            let action = args.action || '/en/explore',
             method = args.method || 'GET';
 
             return m('#search.w-container.w-hidden-main.w-hidden-medium', [

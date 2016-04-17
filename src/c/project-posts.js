@@ -31,7 +31,7 @@ window.c.ProjectPosts = ((m, models, h, _) => {
                         m('.w-row.u-marginbottom-20', [
                             m('.w-col.w-col-4'),
                             m('.w-col.w-col-4', [
-                                m(`a.btn.btn-edit.btn-small[href='/pt/projects/${project.id}/edit#posts']`, 'Escrever novidade')
+                                m(`a.btn.btn-edit.btn-small[href='/en/projects/${project.id}/edit#posts']`, 'Escrever novidade')
                             ]),
                             m('.w-col.w-col-4'),
                         ])

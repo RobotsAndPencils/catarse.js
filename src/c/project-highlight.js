@@ -22,11 +22,11 @@ window.c.ProjectHighlight = ((m, _, h, c) => {
                 m('.project-blurb', project().headline),
                 m('.u-text-center-small-only.u-marginbottom-30', [
                     (!_.isNull(address) ?
-                     m(`a.btn.btn-inline.btn-small.btn-transparent.link-hidden-light.u-marginbottom-10[href="/pt/explore?pg_search=${address.state_acronym}"]`, [
+                     m(`a.btn.btn-inline.btn-small.btn-transparent.link-hidden-light.u-marginbottom-10[href="/en/explore?pg_search=${address.state_acronym}"]`, [
                             m('span.fa.fa-map-marker'), ` ${address.city}, ${address.state_acronym}`
                         ]) : ''
                     ),
-                    m(`a.btn.btn-inline.btn-small.btn-transparent.link-hidden-light[href="/pt/explore#by_category_id/${project().category_id}"]`, [
+                    m(`a.btn.btn-inline.btn-small.btn-transparent.link-hidden-light[href="/en/explore#by_category_id/${project().category_id}"]`, [
                         m('span.fa.fa-tag'), ' ',
                         project().category_name
                     ]),
