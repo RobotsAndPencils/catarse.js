@@ -12,8 +12,8 @@ window.c.h = ((m, moment, I18n) => {
     return obj ? obj : emptyState;
 		},
         setMomentifyLocale = () => {
-            moment.locale('pt', {
-                    monthsShort: 'jan_fev_mar_abr_mai_jun_jul_ago_set_out_nov_dez'.split('_')
+            moment.locale('en', {
+                    monthsShort: 'jan_feb_mar_apr_may_jun_jul_aug_sep_oct_nov_dec'.split('_')
                 });
         },
         existy = (x) => {
@@ -21,8 +21,8 @@ window.c.h = ((m, moment, I18n) => {
         },
 
         momentify = (date, format) => {
-            format = format || 'DD/MM/YYYY';
-            return date ? moment(date).locale('pt').format(format) : 'no date';
+            format = format || 'YYYY-MM-DD';
+            return date ? moment(date).locale('en').format(format) : 'no date';
         },
 
         storeAction = (action) => {
@@ -52,15 +52,15 @@ window.c.h = ((m, moment, I18n) => {
         },
 
         momentFromString = (date, format) => {
-            const european = moment(date, format || 'DD/MM/YYYY');
+            const european = moment(date, format || 'YYYY-MM-DD');
             return european.isValid() ? european : moment(date);
         },
 
         translatedTimeUnits = {
-            days: 'dias',
-            minutes: 'minutos',
-            hours: 'horas',
-            seconds: 'segundos'
+            days: 'days',
+            minutes: 'minutes',
+            hours: 'hours',
+            seconds: 'seconds'
         },
         //Object manipulation helpers
         translatedTime = (time) => {

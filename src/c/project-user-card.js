@@ -12,9 +12,9 @@ window.c.ProjectUserCard = ((m, _, h) => {
                                 m('a.link-hidden[href="/users/' + userDetail.id + '"]', userDetail.name)
                             ]),
                             m('.fontsize-smallest', [
-                                h.pluralize(userDetail.total_published_projects, ' criado', ' criados'),
+                                h.pluralize(userDetail.total_published_projects, ' project', ' projects'),
                                 m.trust('&nbsp;&nbsp;|&nbsp;&nbsp;'),
-                                h.pluralize(userDetail.total_contributed_projects, ' apoiado', ' apoiados')
+                                h.pluralize(userDetail.total_contributed_projects, ' contribution', ' contributions')
                             ]),
                             m('ul.w-hidden-tiny.w-hidden-small.w-list-unstyled.fontsize-smaller.fontweight-semibold.u-margintop-20.u-marginbottom-20', [
                                 (!_.isEmpty(userDetail.facebook_link) ? m('li', [
