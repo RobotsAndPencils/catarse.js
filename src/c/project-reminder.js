@@ -63,7 +63,7 @@ window.c.ProjectReminder = ((m, models, h, c) => {
                     onclick: ctrl.submitReminder
                 }, [
                     (ctrl.l() ? 'aguarde ...' : m('span.fa.fa-clock-o', [
-                        m(`span${hideTextOnMobile ? '.w-hidden-medium' : ''}`, project().in_reminder ? ' Lembrete ativo' : ' Lembrar-me')
+                        m(`span${hideTextOnMobile ? '.w-hidden-medium' : ''}`, project().in_reminder ? ' Active Reminder' : ' Remind Me')
                     ]))
                 ]), (ctrl.popNotification() ? m.component(c.PopNotification, {
                     message: 'Ok! Vamos te mandar um lembrete por e-mail 48 horas antes do fim da campanha'

@@ -17,7 +17,7 @@ window.c.ProjectRewardList = ((m, h, _) => {
                                 m('span.badge.badge-gone.fontsize-smaller', 'Sold Out')
                             ]) : m('.u-margintop-10', [
                                 m('span.badge.badge-attention.fontsize-smaller', [
-                                    m('span.fontweight-bold', 'Limitada'),
+                                    m('span.fontweight-bold', 'Limited'),
                                     ' (' + h.rewardRemaning(reward) + ' de ' + reward.maximum_contributions + ' available)'
                                 ])
                             ]))
@@ -29,7 +29,7 @@ window.c.ProjectRewardList = ((m, h, _) => {
                             h.momentify(reward.deliver_at, 'YYYY-MMM')
                         ]) : ''), (project().open_for_contributions && !h.rewardSouldOut(reward) ?
                         m('.project-reward-box-hover', [
-                            m('.project-reward-box-select-text.u-text-center', 'Selecione essa recompensa')
+                            m('.project-reward-box-select-text.u-text-center', 'Select this reward')
                         ]) : '')
                 ]);
             }));

@@ -45,14 +45,14 @@ window.c.ProjectCard = ((m, h, models, I18n) => {
                                 m('.fontsize-base.fontweight-semibold', `${Math.ceil(project.progress)}%`)
                             ]),
                             m('.w-col.w-col-4.w-col-small-4.w-col-tiny-4.u-text-center-small-only', [
-                                m('.fontsize-smaller.fontweight-semibold', `R$ ${h.formatNumber(project.pledged)}`),
-                                m('.fontsize-smallest.lineheight-tightest', 'Levantados')
+                                m('.fontsize-smaller.fontweight-semibold', `$ ${h.formatNumber(project.pledged)}`),
+                                m('.fontsize-smallest.lineheight-tightest', 'Raised')
                             ]),
                             m('.w-col.w-col-4.w-col-small-4.w-col-tiny-4.u-text-right', project.expires_at ? [
                                 m('.fontsize-smaller.fontweight-semibold', `${remainingTextObj.total} ${remainingTextObj.unit}`),
-                                m('.fontsize-smallest.lineheight-tightest', (remainingTextObj.total > 1) ? 'Restantes' : 'Restante')
+                                m('.fontsize-smallest.lineheight-tightest', (remainingTextObj.total > 1) ? 'Remaining' : 'Remaining')
                             ] : [
-                                m('.fontsize-smallest.lineheight-tight', ['Prazo em',m('br'),'aberto'])
+                                m('.fontsize-smallest.lineheight-tight', ['Time',m('br'),'left '])
                             ])
                         ])
                     ])
