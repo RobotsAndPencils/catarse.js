@@ -18,7 +18,7 @@ window.c.ProjectRewardList = ((m, h, _) => {
                             ]) : m('.u-margintop-10', [
                                 m('span.badge.badge-attention.fontsize-smaller', [
                                     m('span.fontweight-bold', 'Limited'),
-                                    ' (' + h.rewardRemaning(reward) + ' de ' + reward.maximum_contributions + ' available)'
+                                    ' (' + h.rewardRemaning(reward) + ' of ' + reward.maximum_contributions + ' available)'
                                 ])
                             ]))
                         ] : ''),

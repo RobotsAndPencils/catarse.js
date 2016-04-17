@@ -96,7 +96,7 @@ window.c.root.ProjectsExplore = ((m, c, h, _, moment) => {
                             };
 
                       if (_.isString(search) && search.length > 0 && route === null) {
-                          title('Busca ' + search);
+                          title('search: ' + search);
                           projects(searchProjects());
                       } else {
                           title(filter.title);
