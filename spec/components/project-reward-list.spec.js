@@ -68,9 +68,9 @@ describe('ProjectRewardList', () => {
             });
 
             expect(output.find('.card-reward').length).toEqual(1);
-            expect(output.contains('Para R$ 20 ou mais')).toEqual(true);
-            expect(output.contains('Estimativa de Entrega:')).toEqual(true);
-            expect(output.contains(window.c.h.momentify(rewardDetail.deliver_at, 'MMM/YYYY'))).toEqual(true)
+            expect(output.contains('For $20 or more')).toEqual(true);
+            expect(output.contains('Delivery Estimate:')).toEqual(true);
+            expect(output.contains(window.c.h.momentify(rewardDetail.deliver_at, 'YYYY-MMM'))).toEqual(true)
             expect(output.contains(rewardDetail.description)).toEqual(true);
         });
     });

@@ -20,7 +20,7 @@ window.c.root.Insights = ((m, c, h, models, _, I18n) => {
             const lContributionsPerDay = loader(models.projectContributionsPerDay.getRowOptions(filtersVM.parameters()));
             lContributionsPerDay.load().then(contributionsPerDay);
 
-            let contributionsPerLocationTable = [['Estado', 'Apoios', 'R$ apoiados (% do total)']];
+            let contributionsPerLocationTable = [['Estado', 'Apoios', '$ apoiados (% do total)']];
             const buildPerLocationTable = (contributions) => {
                 return (!_.isEmpty(contributions)) ? _.map(_.first(contributions).source, (contribution) => {
                     let column = [];
@@ -29,7 +29,7 @@ window.c.root.Insights = ((m, c, h, models, _, I18n) => {
                     column.push(contribution.total_contributions);
                     column.push([contribution.total_contributed,[//Adding row with custom comparator => read project-data-table description
                         m(`input[type="hidden"][value="${contribution.total_contributed}"`),
-                        'R$ ',
+                        '$ ',
                         h.formatNumber(contribution.total_contributed, 2, 3),
                         m('span.w-hidden-small.w-hidden-tiny', ' (' + contribution.total_on_percentage.toFixed(2) + '%)')
                     ]]);
@@ -63,7 +63,7 @@ window.c.root.Insights = ((m, c, h, models, _, I18n) => {
                     column.push(contribution.total);
                     column.push([contribution.total_amount,[
                         m(`input[type="hidden"][value="${contribution.total_contributed}"`),
-                        'R$ ',
+                        '$ ',
                         h.formatNumber(contribution.total_amount, 2, 3),
                         m('span.w-hidden-small.w-hidden-tiny', ' (' + contribution.total_on_percentage.toFixed(2) + '%)')
                     ]]);

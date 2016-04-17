@@ -253,12 +253,12 @@ window.c.root.Publish = ((m, c, h, models, _, I18n) => {
                     m('.w-col.w-col-6', [
                       m('.u-marginbottom-30.fontsize-base', [
                         m('div', [m('span.fontweight-semibold', 'Título: '), project.name]),
-                        m('div', [m('span.fontweight-semibold', 'Link: '),`www.catarse.me/${project.permalink}`]),
+                        m('div', [m('span.fontweight-semibold', 'Link: '),`www.startio-staging.com/${project.permalink}`]),
                         m('div', [m('span.fontweight-semibold', 'Modalidade de financiamento: '), I18n.t(project.mode, I18nScope())]),
-                        m('div', [m('span.fontweight-semibold', 'Meta de arrecadação: '),`R$ ${h.formatNumber(project.goal, 2, 3)}`]),
-                        (project.mode !== 'flex') ? m('div', [m('span.fontweight-semibold', `Prazo: ${project.online_days} dias`)]) : '',
+                        m('div', [m('span.fontweight-semibold', 'Meta de arrecadação: '),`$ ${h.formatNumber(project.goal, 2, 3)}`]),
+                        (project.mode !== 'flex') ? m('div', [m('span.fontweight-semibold', `Deadline: ${project.online_days} days`)]) : '',
                         m('div', [m('span.fontweight-semibold', 'Responsável: '), project.user.name]),
-                        m('div', [m('span.fontweight-semibold', 'CPF/CNPJ: '), ctrl.accountL() ? 'carregando informação...' : account.owner_document])
+                        m('div', [m('span.fontweight-semibold', 'CPF/CNPJ: '), ctrl.accountL() ? 'loading information...' : account.owner_document])
                       ])
                     ])
                   ]),

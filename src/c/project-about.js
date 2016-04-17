@@ -20,7 +20,7 @@ window.c.ProjectAbout = ((m, c, h) => {
                     config: h.UIHelper()
                 }, [
                     m('p.fontsize-base', [
-                        m('strong', 'O projeto'),
+                        m('strong', 'The Project'),
                     ]),
                     m('.fontsize-base[itemprop="about"]', m.trust(h.selfOrEmpty(project.about_html, '...'))),
                     project.budget ? [
@@ -29,13 +29,13 @@ window.c.ProjectAbout = ((m, c, h) => {
                     ] : '',
                 ]),
                 m('.w-col.w-col-4.w-hidden-small.w-hidden-tiny', !_.isEmpty(args.rewardDetails()) ? [
-                    m('.fontsize-base.fontweight-semibold.u-marginbottom-30', 'Recompensas'),
+                    m('.fontsize-base.fontweight-semibold.u-marginbottom-30', 'Rewards'),
                     m.component(c.ProjectRewardList, {
                         project: args.project,
                         rewardDetails: args.rewardDetails
                     }), fundingPeriod()
                 ] : [
-                    m('.fontsize-base.fontweight-semibold.u-marginbottom-30', 'Sugestões de apoio'),
+                    m('.fontsize-base.fontweight-semibold.u-marginbottom-30', 'Suggested Contributions'),
                     m.component(c.ProjectSuggestedContributions, {project: args.project}),
                     fundingPeriod()
                 ])
