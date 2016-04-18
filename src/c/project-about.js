@@ -24,7 +24,7 @@ window.c.ProjectAbout = ((m, c, h) => {
                     ]),
                     m('.fontsize-base[itemprop="about"]', m.trust(h.selfOrEmpty(project.about_html, '...'))),
                     project.budget ? [
-                        m('p.fontsize-base.fontweight-semibold', 'Orçamento'),
+                        m('p.fontsize-base.fontweight-semibold', 'Budget'),
                         m('p.fontsize-base', m.trust(project.budget))
                     ] : '',
                 ]),
