@@ -26,12 +26,12 @@ window.c.ProjectPosts = ((m, models, h, _) => {
                     (project.is_owner_or_admin ? [
                         (!list.isLoading()) ?
                         (_.isEmpty(list.collection()) ? m('.w-hidden-small.w-hidden-tiny', [
-                            m('.fontsize-base.u-marginbottom-30.u-margintop-20', 'Toda novidade publicada no Catarse é enviada diretamente para o email de quem já apoiou seu projeto e também fica disponível para visualização no site. Você pode optar por deixá-la pública, ou visível somente para seus apoiadores aqui nesta aba.')
+                            m('.fontsize-base.u-marginbottom-30.u-margintop-20', 'Each post published on Startio is send directly to your supporters email and it will also be available in the website. You can make it public or restrict visibility to only some of your supporters in this tab.')
                         ]) : '') : '',
                         m('.w-row.u-marginbottom-20', [
                             m('.w-col.w-col-4'),
                             m('.w-col.w-col-4', [
-                                m(`a.btn.btn-edit.btn-small[href='/en/projects/${project.id}/edit#posts']`, 'Escrever novidade')
+                                m(`a.btn.btn-edit.btn-small[href='/en/projects/${project.id}/edit#posts']`, 'Write a new post')
                             ]),
                             m('.w-col.w-col-4'),
                         ])
@@ -53,7 +53,7 @@ window.c.ProjectPosts = ((m, models, h, _) => {
                     m('.w-row', [
                         m('.w-col.w-col-2.w-col-push-5', [
                             (!list.isLoading() ?
-                                (list.isLastPage() ? 'Nenhuma novidade.' : m('button#load-more.btn.btn-medium.btn-terciary', {
+                                (list.isLastPage() ? 'Zero posts.' : m('button#load-more.btn.btn-medium.btn-terciary', {
                                     onclick: list.nextPage
                                 }, 'Carregar mais')) :
                                 h.loader()),

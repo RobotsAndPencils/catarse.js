@@ -36,7 +36,7 @@ window.c.ProjectContributions = ((m, models, h, _) => {
                             })
                         ]),
                         m('.w-col.w-col-5', [
-                            m('label[for="contribution_state_available_to_count"]', 'Confirmados')
+                            m('label[for="contribution_state_available_to_count"]', 'Confirmed')
                         ]),
                         m('.w-col.w-col-1', [
                             m('input[id="contribution_state_waiting_confirmation"][type="radio"][name="waiting_payment"][value="waiting_confirmation"]', {
@@ -44,7 +44,7 @@ window.c.ProjectContributions = ((m, models, h, _) => {
                             })
                         ]),
                         m('.w-col.w-col-5', [
-                            m('label[for="contribution_state_waiting_confirmation"]', 'Pendentes')
+                            m('label[for="contribution_state_waiting_confirmation"]', 'Pending')
                         ])
                     ]) : ''),
                 m('.project-contributions', _.map(list.collection(), (contribution) => {
