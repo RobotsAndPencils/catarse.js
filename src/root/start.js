@@ -212,18 +212,19 @@ window.c.root.Start = ((m, c, h, models, I18n) => {
                         ])
                     ])
                 ]),
-                m('.w-section.section-large.bg-blue-one', [
-                    m('.w-container.u-text-center', [
-                        m('.fontsize-larger.lineheight-tight.fontcolor-negative.u-marginbottom-20', [
-                            I18n.t('video.title', I18nScope()),
-                            m('br'),
-                            I18n.t('video.subtitle', I18nScope())
-                        ]),
-                        m.component(c.YoutubeLightbox, {
-                            src: I18n.t('video.src', I18nScope())
-                        })
-                    ])
-                ]),
+                // TODO: put this back in with an english video
+                //m('.w-section.section-large.bg-blue-one', [
+                //    m('.w-container.u-text-center', [
+                //        m('.fontsize-larger.lineheight-tight.fontcolor-negative.u-marginbottom-20', [
+                //            I18n.t('video.title', I18nScope()),
+                //            m('br'),
+                //            I18n.t('video.subtitle', I18nScope())
+                //        ]),
+                //        m.component(c.YoutubeLightbox, {
+                //            src: I18n.t('video.src', I18nScope())
+                //        })
+                //    ])
+                //]),
                 m('.w-hidden-small.w-hidden-tiny.section-categories', [
                     m('.w-container', [
                         m('.u-text-center', [
