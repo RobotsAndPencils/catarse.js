@@ -16,7 +16,7 @@ describe('UserBalance', () => {
     });
 
     it('should render user balance', () => {
-        expect($output.contains('R$ 205,00')).toEqual(true);
+        expect($output.contains('$ 205.00')).toEqual(true);
     });
 
     it('should render request fund btn', () => {
@@ -26,7 +26,7 @@ describe('UserBalance', () => {
     it('should call bank_account endpoint when click on request fund btn and show modal', () => {
         $output.click('.r-fund-btn');
         $output.should.have('.modal-dialog-inner');
-        expect($output.contains('Banco XX')).toEqual(true);
+        expect($output.contains('Bank XX')).toEqual(true);
 
         const lastRequest = jasmine.Ajax.requests.mostRecent();
         expect(lastRequest.url).toEqual(apiPrefix + '/bank_accounts?user_id=eq.1');

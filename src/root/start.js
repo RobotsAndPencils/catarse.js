@@ -133,7 +133,7 @@ window.c.root.Start = ((m, c, h, models, I18n) => {
                                 m('p.fontsize-small.start-stats', I18n.t('header.people', I18nScope()))
                             ]),
                             m('.w-col.w-col-4', [
-                                m('.fontsize-largest.lineheight-loose', stats.total_contributed.toString().slice(0, 2) + ' milhões'),
+                                m('.fontsize-largest.lineheight-loose', stats.total_contributed.toString().slice(0, 2) + ' million'),
                                 m('p.fontsize-small.start-stats', I18n.t('header.money', I18nScope()))
                             ]),
                             m('.w-col.w-col-4', [
@@ -312,7 +312,7 @@ window.c.root.Start = ((m, c, h, models, I18n) => {
                                 m('input[name="utf8"][type="hidden"][value="✓"]'),
                                 m(`input[name="authenticity_token"][type="hidden"][value="${h.authenticityToken()}"]`),
                                 m('input.w-input.text-field.medium.u-marginbottom-30[type="text"]', {name: 'project[name]'}),
-                                m('.fontsize-larger.fontcolor-negative.u-marginbottom-10', 'na categoria'),
+                                m('.fontsize-larger.fontcolor-negative.u-marginbottom-10', 'in the category'),
                                 m('select.w-select.text-field.medium.u-marginbottom-40', {name: 'project[category_id]'},[
                                     m('option[value=""]', I18n.t('form.select_default', I18nScope())),
                                     _.map(ctrl.categories(), (category) => {
@@ -333,4 +333,3 @@ window.c.root.Start = ((m, c, h, models, I18n) => {
         }
     };
 }(window.m, window.c, window.c.h, window.c.models, window.I18n));
-

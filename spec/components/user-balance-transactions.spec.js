@@ -17,9 +17,9 @@ describe('UserBalanceTransactions', () => {
 
     it('should render user balance transactions', () => {
         $output.should.have('.card-detailed-open');
-        expect($output.contains('R$ 604,50')).toEqual(true);
-        expect($output.contains('R$ 0,00')).toEqual(true);
-        expect($output.contains('R$ -604,50')).toEqual(true);
+        expect($output.contains('$ 604.50')).toEqual(true);
+        expect($output.contains('$ 0.00')).toEqual(true);
+        expect($output.contains('$ -604.50')).toEqual(true);
         expect($output.contains('Project x')).toEqual(true);
     });
 });
