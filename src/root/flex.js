@@ -108,7 +108,7 @@ window.c.root.Flex = (function(m, c, h, models) {
                     m('.w-section.divider'),
                     m('.w-section.section', [
                         m('.w-container', [
-                            m('.fontsize-larger.u-text-center.u-marginbottom-60.u-margintop-40', 'Dúvidas'), m('.w-row.u-marginbottom-60', [
+                            m('.fontsize-larger.u-text-center.u-marginbottom-60.u-margintop-40', 'FAQ'), m('.w-row.u-marginbottom-60', [
                                 m('.w-col.w-col-6', [
                                     m.component(c.landingQA, {
                                         question: 'What are the fees for the Flex campaign? ',
@@ -193,10 +193,7 @@ window.c.root.Flex = (function(m, c, h, models) {
                         m('.w-container', [
                             m('#participe-do-debate.u-text-center', {config: h.toAnchor()}, [
                                 m('h1.fontsize-largest.fontcolor-negative','Help us build Startio'), m('.fontsize-base.u-marginbottom-60.fontcolor-negative', 'Start a conversation, ask, comment, criticize and make suggestions!')
-                            ]),
-                            m('#disqus_thread.card.u-radius[style="min-height: 50vh;"]', {
-                                config: ctrl.addDisqus
-                            })
+                            ])
                         ])
                     ])
                 ]
