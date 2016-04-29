@@ -60,7 +60,7 @@ window.c.ContributionActivities = ((m, h, models, _) => {
 
                 return m('.w-section.section.bg-backs-carrosel', {config: ctrl.startConfig}, [
                     m('.w-container.u-text-center.fontcolor-negative', [
-                        m('.fontsize-large.u-marginbottom-30', `há ${parseInt(elapsed.total)} ${elapsed.unit}...`),
+                        m('.fontsize-large.u-marginbottom-30', `In the last ${parseInt(elapsed.total)} ${elapsed.unit}...`),
                         m('.w-clearfix.w-inline-block.u-marginbottom-10', [
                             m('a', {href: project_link}, [
                                 m('img.thumb-author.u-round', {src: resource.thumbnail, width: 80}),
@@ -70,7 +70,7 @@ window.c.ContributionActivities = ((m, h, models, _) => {
                                 m('img.thumb-author.u-round', {src: resource.project_thumbnail, width: 80, style: 'margin-right: 0;'}),
                             ])
                         ]),
-                        m('.fontsize-large', `${resource.name} apoiou`),
+                        m('.fontsize-large', `${resource.name} supported`),
                         m('.fontsize-larger', [
                             m('a.link-hidden-white', {href: project_link}, resource.project_name)
                         ])
