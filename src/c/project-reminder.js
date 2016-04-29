@@ -66,7 +66,7 @@ window.c.ProjectReminder = ((m, models, h, c) => {
                         m(`span${hideTextOnMobile ? '.w-hidden-medium' : ''}`, project().in_reminder ? ' Active Reminder' : ' Remind Me')
                     ]))
                 ]), (ctrl.popNotification() ? m.component(c.PopNotification, {
-                    message: 'Ok! Vamos te mandar um lembrete por e-mail 48 horas antes do fim da campanha'
+                    message: 'Ok! We will remind you via email 48 hours before the funding period ends.'
                 }) : '')
             ]);
         }
