@@ -73,7 +73,7 @@ window.c.ProjectTabs = ((m, h) => {
                                     style: 'float: left;'
                                 }, [
                                     'Comments ',
-                                    project() ? m('fb:comments-count[href="http://www.catarse.me/' + project().permalink + '"][class="badge project-fb-comment w-hidden-small w-hidden-tiny"][style="display: inline"]', m.trust('&nbsp;')) : '-'
+                                    project() ? m('fb:comments-count[href="https://www.startio-staging.com/' + project().permalink + '"][class="badge project-fb-comment w-hidden-small w-hidden-tiny"][style="display: inline"]', m.trust('&nbsp;')) : '-'
                                 ]),
                             ]),
                             project() ? m('.w-col.w-col-4.w-hidden-small.w-hidden-tiny', project().open_for_contributions ? [

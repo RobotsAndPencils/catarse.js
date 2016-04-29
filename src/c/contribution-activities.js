@@ -56,7 +56,7 @@ window.c.ContributionActivities = ((m, h, models, _) => {
             if (!ctrl.collectionL() && !_.isUndefined(ctrl.resource()) && (ctrl.collectionSize() || 0) > 0) {
                 let resource = ctrl.resource(),
                     elapsed = h.translatedTime(resource.elapsed_time),
-                    project_link = `https://catarse.me/${resource.permalink}?ref=ctrse_home_activities`;
+                    project_link = `https://www.startio-staging.com/${resource.permalink}?ref=ctrse_home_activities`;
 
                 return m('.w-section.section.bg-backs-carrosel', {config: ctrl.startConfig}, [
                     m('.w-container.u-text-center.fontcolor-negative', [
