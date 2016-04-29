@@ -24,11 +24,11 @@ window.c.AdminUserDetail = (function(m, _, c){
                     reactivate: {
                         property: 'deactivated_at',
                         updateKey: 'id',
-                        callToAction: 'Reativar',
-                        innerLabel: 'Tem certeza que deseja reativar esse usuário?',
-                        successMessage: 'Usuário reativado com sucesso!',
-                        errorMessage: 'O usuário não pôde ser reativado!',
-                        outerLabel: 'Reativar usuário',
+                        callToAction: 'Reactivate',
+                        innerLabel: 'Are you sure you want to reactivate this user?',
+                        successMessage: 'User reactivation successfully!',
+                        errorMessage: 'User cannot be reactivated!',
+                        outerLabel: 'Reactivate user',
                         forceValue: null,
                         model: c.models.user
                     }

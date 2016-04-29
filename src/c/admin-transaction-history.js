@@ -4,22 +4,22 @@ window.c.AdminTransactionHistory = (function(m, h, _) {
             var contribution = args.contribution,
                 mapEvents = _.reduce([{
                     date: contribution.paid_at,
-                    name: 'Apoio confirmado'
+                    name: 'Contribution confirmed'
                 }, {
                     date: contribution.pending_refund_at,
-                    name: 'Reembolso solicitado'
+                    name: 'Refund requested'
                 }, {
                     date: contribution.refunded_at,
-                    name: 'Estorno realizado'
+                    name: 'Refund confirmed'
                 }, {
                     date: contribution.created_at,
-                    name: 'Apoio criado'
+                    name: 'Contribution created'
                 }, {
                     date: contribution.refused_at,
-                    name: 'Apoio cancelado'
+                    name: 'Contribution canceled'
                 }, {
                     date: contribution.deleted_at,
-                    name: 'Apoio excluído'
+                    name: 'Contribution deleted'
                 }, {
                     date: contribution.chargeback_at,
                     name: 'Chargeback'
