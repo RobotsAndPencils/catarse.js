@@ -21,7 +21,7 @@ window.c.UserBalanceTransactions = ((m, h, models, _) => {
                             !list.isLoading() ? (
                                 list.isLastPage() ? '' : m('button#load-more.btn.btn-medium.btn-terciary', {
                                     onclick: list.nextPage
-                                }, 'Carregar mais')
+                                }, 'Load more')
                             ) :
                             h.loader()
                         ])

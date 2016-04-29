@@ -9,7 +9,7 @@ window.c.FilterMain = (function(m) {
                     })
                 ]),
                 m('.w-col.w-col-2', [
-                    m('input#filter-btn.btn.btn-large.u-marginbottom-10[type="submit"][value="Buscar"]')
+                    m('input#filter-btn.btn.btn-large.u-marginbottom-10[type="submit"][value="Search"]')
                 ])
             ]);
         }

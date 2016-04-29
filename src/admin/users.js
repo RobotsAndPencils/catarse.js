@@ -13,24 +13,24 @@ window.c.admin.Users = (function(m, c, h) {
                     component: 'FilterMain',
                     data: {
                         vm: filterVM.full_text_index,
-                        placeholder: 'Busque por nome, e-mail, Ids do usuário...',
+                        placeholder: 'Search by name, email, user id ...',
                     },
                 }, { //status
                     component: 'FilterDropdown',
                     data: {
-                        label: 'Com o estado',
+                        label: 'With status',
                         index: 'status',
                         name: 'deactivated_at',
                         vm: filterVM.deactivated_at,
                         options: [{
                             value: '',
-                            option: 'Qualquer um'
+                            option: 'Any'
                         }, {
                             value: null,
-                            option: 'ativo'
+                            option: 'active'
                         }, {
                             value: !null,
-                            option: 'desativado'
+                            option: 'disabled'
                         }]
                     }
                 }],

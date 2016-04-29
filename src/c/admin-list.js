@@ -22,7 +22,7 @@ window.c.AdminList = (function(m, h, c) {
                             m('.w-col.w-col-9', [
                                 m('.fontsize-base',
                                     list.isLoading() ?
-                                    `Carregando ${label.toLowerCase()}...` : [m('span.fontweight-semibold', list.total()), ` ${label.toLowerCase()} encontrados`]
+                                    `Carregando ${label.toLowerCase()}...` : [m('span.fontweight-semibold', list.total()), ` ${label.toLowerCase()} found`]
                                 )
                             ])
                         ]),
@@ -43,7 +43,7 @@ window.c.AdminList = (function(m, h, c) {
                                             h.loader() :
                                             m('button#load-more.btn.btn-medium.btn-terciary', {
                                                 onclick: list.nextPage
-                                            }, 'Carregar mais'),
+                                            }, 'Load more'),
                                         ])
                                     ])
                                 ])

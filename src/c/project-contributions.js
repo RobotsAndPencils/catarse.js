@@ -73,7 +73,7 @@ window.c.ProjectContributions = ((m, models, h, _) => {
                     m('.w-col.w-col-2.w-col-push-5', [!list.isLoading() ?
                         (list.isLastPage() ? '' : m('button#load-more.btn.btn-medium.btn-terciary', {
                             onclick: list.nextPage
-                        }, 'Carregar mais')) :
+                        }, 'Load more')) :
                         h.loader(),
                     ])
                 ])

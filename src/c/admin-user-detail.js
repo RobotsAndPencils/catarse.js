@@ -15,20 +15,20 @@ window.c.AdminUserDetail = (function(m, _, c){
                 actions: {
                     reset: {
                         property: 'password',
-                        callToAction: 'Redefinir',
-                        innerLabel: 'Nova senha de Usuário:',
-                        outerLabel: 'Redefinir senha',
+                        callToAction: 'Change',
+                        innerLabel: 'New Password:',
+                        outerLabel: 'Change Password',
                         placeholder: 'ex: 123mud@r',
                         model: c.models.user
                     },
                     reactivate: {
                         property: 'deactivated_at',
                         updateKey: 'id',
-                        callToAction: 'Reativar',
-                        innerLabel: 'Tem certeza que deseja reativar esse usuário?',
-                        successMessage: 'Usuário reativado com sucesso!',
-                        errorMessage: 'O usuário não pôde ser reativado!',
-                        outerLabel: 'Reativar usuário',
+                        callToAction: 'Activate',
+                        innerLabel: 'Are you sure you want to activate this user?',
+                        successMessage: 'Successfully reactivated User!',
+                        errorMessage: 'The user could not be reactivated!',
+                        outerLabel: 'Reactivate User',
                         forceValue: null,
                         model: c.models.user
                     }

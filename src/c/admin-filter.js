@@ -26,7 +26,7 @@ window.c.AdminFilter = (function(c, m, _, h) {
                             m('.u-marginbottom-20.w-row',
                                 m('button.w-col.w-col-12.fontsize-smallest.link-hidden-light[style="background: none; border: none; outline: none; text-align: left;"][type="button"]', {
                                     onclick: ctrl.toggler.toggle
-                                }, 'Filtros avançados  >')), (ctrl.toggler() ?
+                                }, 'Advanced filters  >')), (ctrl.toggler() ?
                                 m('#advanced-search.w-row.admin-filters', [
                                     _.map(filterBuilder, function(f) {
                                         return (f.component !== 'FilterMain') ? m.component(c[f.component], f.data) : '';
