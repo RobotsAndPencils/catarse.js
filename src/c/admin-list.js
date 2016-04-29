@@ -22,7 +22,7 @@ window.c.AdminList = (function(m, h, c) {
                             m('.w-col.w-col-9', [
                                 m('.fontsize-base',
                                     list.isLoading() ?
-                                    `Carregando ${label.toLowerCase()}...` : [m('span.fontweight-semibold', list.total()), ` ${label.toLowerCase()} found`]
+                                    `Loading ${label.toLowerCase()}...` : [m('span.fontweight-semibold', list.total()), ` ${label.toLowerCase()} found`]
                                 )
                             ])
                         ]),

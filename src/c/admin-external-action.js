@@ -68,7 +68,7 @@ window.c.AdminExternalAction = ((function(m, h, c, _) {
         },
         view: function(ctrl, args) {
             var data = args.data,
-                btnValue = (ctrl.l()) ? 'por favor, aguarde...' : data.callToAction;
+                btnValue = (ctrl.l()) ? 'please wait...' : data.callToAction;
 
             return m('.w-col.w-col-2', [
                 m('button.btn.btn-small.btn-terciary', {

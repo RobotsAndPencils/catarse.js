@@ -100,7 +100,7 @@ window.c.AdminRadioAction = (function(m, h, c, _) {
         view: function(ctrl, args) {
             let data = args.data,
                 item = args.item(),
-                btnValue = (ctrl.setLoader() || ctrl.getLoader()) ? 'por favor, aguarde...' : data.callToAction;
+                btnValue = (ctrl.setLoader() || ctrl.getLoader()) ? 'please wait...' : data.callToAction;
 
             return m('.w-col.w-col-2', [
                 m('button.btn.btn-small.btn-terciary', {
