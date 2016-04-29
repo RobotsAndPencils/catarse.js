@@ -20,12 +20,12 @@ describe('ProjectShareBox', () => {
             $output.should.have('.pop-share');
             $output.should.have('.w-widget-facebook');
             $output.should.have('.w-widget-twitter');
-            $output.should.have('.widget-embed');
+            //$output.should.have('.widget-embed');
         });
 
-        it('should open embed box when click on embed', () => {
-            $output.click('a.widget-embed');
-            $output.should.have('.embed-expanded');
-        });
+      //  it('should open embed box when click on embed', () => {
+      //      $output.click('a.widget-embed');
+      //      $output.should.have('.embed-expanded');
+      //  });
     });
 });
