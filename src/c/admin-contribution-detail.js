@@ -20,12 +20,12 @@ window.c.AdminContributionDetail = (function(m, _, c, h) {
                     transfer: {
                         property: 'user_id',
                         updateKey: 'id',
-                        callToAction: 'Transferir',
-                        innerLabel: 'Id do novo apoiador:',
-                        outerLabel: 'Transferir Apoio',
-                        placeholder: 'ex: 129908',
-                        successMessage: 'Apoio transferido com sucesso!',
-                        errorMessage: 'O apoio não foi transferido!',
+                        callToAction: 'Transfer',
+                        innerLabel: 'New supporter Id:',
+                        outerLabel: 'Transfer support ',
+                        placeholder: 'example: 129908',
+                        successMessage: 'Contribution was removed successfully!',
+                        errorMessage: 'Contribution was not removed successfully!',
                         model: c.models.contributionDetail
                     },
                     reward: {
@@ -33,32 +33,32 @@ window.c.AdminContributionDetail = (function(m, _, c, h) {
                         updateKey: 'contribution_id',
                         selectKey: 'reward_id',
                         radios: 'rewards',
-                        callToAction: 'Alterar Recompensa',
-                        outerLabel: 'Recompensa',
+                        callToAction: 'Change Reward',
+                        outerLabel: 'Reward',
                         getModel: c.models.rewardDetail,
                         updateModel: c.models.contributionDetail,
                         selectedItem: reward,
                         validate: (rewards, newRewardID) => {
                             let reward = _.findWhere(rewards, {id: newRewardID});
-                            return (args.item.value >= reward.minimum_value) ? undefined : 'Valor mínimo da recompensa é maior do que o valor da contribuição.';
+                            return (args.item.value >= reward.minimum_value) ? undefined : 'Reward value is smaller than the contribution value.';
                         }
                     },
                     refund: {
                         updateKey: 'id',
-                        callToAction: 'Reembolso direto',
-                        innerLabel: 'Tem certeza que deseja reembolsar esse apoio?',
-                        outerLabel: 'Reembolsar Apoio',
+                        callToAction: 'Direct Refund',
+                        innerLabel: 'Are you sure you want to refund this contribution?',
+                        outerLabel: 'Refund contribution',
                         model: c.models.contributionDetail
                     },
                     remove: {
                         property: 'state',
                         updateKey: 'id',
-                        callToAction: 'Apagar',
-                        innerLabel: 'Tem certeza que deseja apagar esse apoio?',
-                        outerLabel: 'Apagar Apoio',
+                        callToAction: 'Delete',
+                        innerLabel: 'Are you sure you want to remove this contribution?',
+                        outerLabel: 'Remove contribution',
                         forceValue: 'deleted',
-                        successMessage: 'Apoio removido com sucesso!',
-                        errorMessage: 'O apoio não foi removido!',
+                        successMessage: 'Contribution was removed successfully!',
+                        errorMessage: 'Contribution was not removed successfully!',
                         model: c.models.contributionDetail
                     }
                 },
