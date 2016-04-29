@@ -33,7 +33,7 @@ window.c.ProjectShareBox = ((m, h) => {
                 //     ])
                 // ]) : ''),
                 m('a.w-hidden-main.w-hidden-medium.btn.btn-medium.btn-fb.u-marginbottom-20[href="http://www.facebook.com/sharer/sharer.php?u=https://www.startio-staging.com/' + args.project().permalink + '?ref=facebook&title=' + args.project().name + '"][target="_blank"]', [
-                    m('span.fa.fa-facebook'), ' Facebook'
+                    m('span.fa.fa-facebook'), ' Likes'
                 ]),
                 m('a.w-hidden-main.w-hidden-medium.btn.btn-medium.btn-tweet.u-marginbottom-20[href="http://twitter.com/?status=I just support the project ' + args.project().name + ' https://www.startio-staging.com/' + args.project().permalink + '?ref=twitterr"][target="_blank"]', [
                     m('span.fa.fa-twitter'), ' Tweet'
