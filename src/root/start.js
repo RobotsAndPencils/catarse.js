@@ -252,10 +252,10 @@ window.c.root.Start = ((m, c, h, models, I18n) => {
                                                 }, I18n.t('submit', I18nScope()))
                                             ]),
                                             m('.w-col.w-col-7', [
-                                                m('.fontsize-megajumbo.fontcolor-negative', `R$ ${category.total_successful_value ? h.formatNumber(category.total_successful_value, 2, 3) : '...'}`),
-                                                m('.fontsize-large.u-marginbottom-20', 'Doados para projetos'),
+                                                m('.fontsize-megajumbo.fontcolor-negative', `$ ${category.total_successful_value ? h.formatNumber(category.total_successful_value, 2, 3) : '...'}`),
+                                                m('.fontsize-large.u-marginbottom-20', 'Donated to project'),
                                                 m('.fontsize-megajumbo.fontcolor-negative', (category.successful_projects) ? category.successful_projects : '...'),
-                                                m('.fontsize-large.u-marginbottom-30', 'Projetos financiados'),
+                                                m('.fontsize-large.u-marginbottom-30', 'Funded projects'),
                                                 !_.isEmpty(ctrl.featuredProjects()) ? _.map(ctrl.featuredProjects(), (project) => {
                                                     return !_.isUndefined(project) ? m('.w-row.u-marginbottom-10', [
                                                         m('.w-col.w-col-1', [
@@ -304,7 +304,7 @@ window.c.root.Start = ((m, c, h, models, I18n) => {
                 ]),
                 m('#start-form.w-section.section-large.u-text-center.bg-purple.before-footer', [
                     m('.w-container', [
-                        m('.fontsize-jumbo.fontcolor-negative.u-marginbottom-60', 'Crie o seu rascunho gratuitamente!'),
+                        m('.fontsize-jumbo.fontcolor-negative.u-marginbottom-60', 'Create your project draft for free!'),
                         m('form[action="/projects/fallback_create"][method="GET"].w-row.w-form', [
                             m('.w-col.w-col-2'),
                             m('.w-col.w-col-8', [
@@ -312,7 +312,7 @@ window.c.root.Start = ((m, c, h, models, I18n) => {
                                 m('input[name="utf8"][type="hidden"][value="✓"]'),
                                 m(`input[name="authenticity_token"][type="hidden"][value="${h.authenticityToken()}"]`),
                                 m('input.w-input.text-field.medium.u-marginbottom-30[type="text"]', {name: 'project[name]'}),
-                                m('.fontsize-larger.fontcolor-negative.u-marginbottom-10', 'na categoria'),
+                                m('.fontsize-larger.fontcolor-negative.u-marginbottom-10', 'in category'),
                                 m('select.w-select.text-field.medium.u-marginbottom-40', {name: 'project[category_id]'},[
                                     m('option[value=""]', I18n.t('form.select_default', I18nScope())),
                                     _.map(ctrl.categories(), (category) => {

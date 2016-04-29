@@ -25,7 +25,7 @@ window.c.root.Insights = ((m, c, h, models, _, I18n) => {
             const lContributionsPerDay = loader(models.projectContributionsPerDay.getRowOptions(filtersVM.parameters()));
             lContributionsPerDay.load().then(contributionsPerDay);
 
-            let contributionsPerLocationTable = [['Estado', 'Apoios', 'R$ apoiados (% do total)']];
+            let contributionsPerLocationTable = [['State', 'Contributions', '$ raised (% of total)']];
             const buildPerLocationTable = (contributions) => {
                 return (!_.isEmpty(contributions)) ? _.map(_.first(contributions).source, (contribution) => {
                     let column = [];
@@ -109,7 +109,7 @@ window.c.root.Insights = ((m, c, h, models, _, I18n) => {
                     return m.component(c.Tooltip, {
                         el: el,
                         text: [
-                            'Informa de onde vieram os apoios de seu projeto. Saiba como usar essa tabela e planejar melhor suas ações de comunicação ',
+                            'Tells where your project support came from. Learn how to use this table and how to better plan your communication actions ',
                             m(`a[href="${I18n.t('ref_table.help_url', I18nScope())}"][target='_blank']`, 'aqui.')
                         ],
                         width: 380
