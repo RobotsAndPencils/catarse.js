@@ -9,17 +9,17 @@ window.c.admin.Contributions = (function(m, c, h) {
                     component: 'FilterMain',
                     data: {
                         vm: filterVM.full_text_index,
-                        placeholder: 'Busque por projeto, email, Ids do usuário e do apoio...'
+                        placeholder: 'Search for projects, email, users and support...'
                     }
                 }, { //state
                     component: 'FilterDropdown',
                     data: {
-                        label: 'Com o estado',
+                        label: 'with status',
                         name: 'state',
                         vm: filterVM.state,
                         options: [{
                             value: '',
-                            option: 'Qualquer um'
+                            option: 'Any'
                         }, {
                             value: 'paid',
                             option: 'paid'
@@ -51,19 +51,19 @@ window.c.admin.Contributions = (function(m, c, h) {
                         vm: filterVM.gateway,
                         options: [{
                             value: '',
-                            option: 'Qualquer um'
+                            option: 'Any'
                         }, {
-                            value: 'Pagarme',
-                            option: 'Pagarme'
+                            value: 'Visa',
+                            option: 'Visa'
                         }, {
-                            value: 'MoIP',
-                            option: 'MoIP'
+                            value: 'MasterCard',
+                            option: 'MasterCard'
                         }, {
                             value: 'PayPal',
                             option: 'PayPal'
                         }, {
-                            value: 'Credits',
-                            option: 'Créditos'
+                            value: 'American Express',
+                            option: 'American Express'
                         }]
                     }
                 }, { //value
@@ -76,7 +76,7 @@ window.c.admin.Contributions = (function(m, c, h) {
                 }, { //created_at
                     component: 'FilterDateRange',
                     data: {
-                        label: 'Período do apoio',
+                        label: 'Support Period',
                         first: filterVM.created_at.gte,
                         last: filterVM.created_at.lte
                     }

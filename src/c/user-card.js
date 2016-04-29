@@ -25,16 +25,16 @@ window.c.UserCard = (function(m, _, models, h) {
                                 m('a.link-hidden[href="/users/' + userDetail.id + '"]', userDetail.name)
                             ]),
                             m('.fontsize-smallest.lineheight-looser[itemprop="address"]', userDetail.address_city),
-                            m('.fontsize-smallest', userDetail.total_published_projects + ' projetos criados'),
-                            m('.fontsize-smallest', 'apoiou ' + userDetail.total_contributed_projects + ' projetos')
+                            m('.fontsize-smallest', userDetail.total_published_projects + ' published projects'),
+                            m('.fontsize-smallest', 'supported ' + userDetail.total_contributed_projects + ' projects')
                         ]),
                     ]),
                     m('.project-author-contacts', [
                         m('ul.w-list-unstyled.fontsize-smaller.fontweight-semibold', [
                             (!_.isEmpty(userDetail.facebook_link) ? m('li', [
-                                m('a.link-hidden[itemprop="url"][href="' + userDetail.facebook_link + '"][target="_blank"]', 'Perfil no Facebook')
+                                m('a.link-hidden[itemprop="url"][href="' + userDetail.facebook_link + '"][target="_blank"]', 'Facebook Profile')
                             ]) : ''), (!_.isEmpty(userDetail.twitter_username) ? m('li', [
-                                m('a.link-hidden[itemprop="url"][href="https://twitter.com/' + userDetail.twitter_username + '"][target="_blank"]', 'Perfil no Twitter')
+                                m('a.link-hidden[itemprop="url"][href="https://twitter.com/' + userDetail.twitter_username + '"][target="_blank"]', 'Twitter Profile')
                             ]) : ''),
                             _.map(userDetail.links, function(link) {
                                 return m('li', [
@@ -42,7 +42,7 @@ window.c.UserCard = (function(m, _, models, h) {
                                 ]);
                             })
                         ]),
-                    ]), (!_.isEmpty(userDetail.email) ? m('a.btn.btn-medium.btn-message[href="mailto:' + userDetail.email + '"][itemprop="email"][target="_blank"]', 'Enviar mensagem') : '')
+                    ]), (!_.isEmpty(userDetail.email) ? m('a.btn.btn-medium.btn-message[href="mailto:' + userDetail.email + '"][itemprop="email"][target="_blank"]', 'Email') : '')
                 ]);
             }));
         }

@@ -53,7 +53,7 @@ window.c.admin.Users = (function(m, c, h) {
         },
 
         view: function(ctrl) {
-            const label = 'Usuários';
+            const label = 'User ID';
 
             return [
                 m.component(c.AdminFilter, {

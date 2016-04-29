@@ -13,7 +13,7 @@ window.c.ProjectShareBox = ((m, h) => {
                     m('a.btn.btn-small.btn-terciary.btn-inline.u-right', {
                         onclick: args.displayShareBox.toggle
                     }, 'Fechar'),
-                    m('.fontsize-small.fontweight-semibold.u-marginbottom-30', 'Compartilhe este projeto')
+                    m('.fontsize-small.fontweight-semibold.u-marginbottom-30', 'Share this project')
                 ]),
                 m('.w-widget.w-widget-facebook.w-hidden-small.w-hidden-tiny.share-block', [
                     m('iframe[allowtransparency="true"][width="150px"][height="22px"][frameborder="0"][scrolling="no"][src="https://www.facebook.com/v2.0/plugins/share_button.php?app_id=173747042661491&channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter%2F44OwK74u0Ie.js%3Fversion%3D41%23cb%3Df7d9b900c%26domain%3Dwww.catarse.me%26origin%3Dhttps%253A%252F%252Fwww.catarse.me%252Ff4b3ad0c8%26relation%3Dparent.parent&container_width=0&href=https%3A%2F%2Fwww.catarse.me%2Fpt%2F' + args.project().permalink + '%3Fref%3Dfacebook&layout=button_count&locale=pt_BR&sdk=joey"]')
@@ -24,7 +24,7 @@ window.c.ProjectShareBox = ((m, h) => {
                 m('a.w-hidden-small.widget-embed.w-hidden-tiny.fontsize-small.link-hidden.fontcolor-secondary[href="js:void(0);"]', {
                     onclick: ctrl.displayEmbed.toggle
                 }, '< embed >'), (ctrl.displayEmbed() ? m('.embed-expanded.u-margintop-30', [
-                    m('.fontsize-small.fontweight-semibold.u-marginbottom-20', 'Insira um widget em seu site'),
+                    m('.fontsize-small.fontweight-semibold.u-marginbottom-20', 'Add a widget on your site'),
                     m('.w-form', [
                         m('input.w-input[type="text"][value="<iframe frameborder="0" height="314px" src="https://www.startio-staging.com/en/projects/' + args.project().id + '/embed" width="300px" scrolling="no"></iframe>"]')
                     ]),
@@ -32,10 +32,10 @@ window.c.ProjectShareBox = ((m, h) => {
                         m('iframe[frameborder="0"][height="350px"][src="/projects/' + args.project().id + '/embed"][width="300px"][scrolling="no"]')
                     ])
                 ]) : ''),
-                m('a.w-hidden-main.w-hidden-medium.btn.btn-medium.btn-fb.u-marginbottom-20[href="http://www.facebook.com/sharer/sharer.php?u=https://www.catarse.me/' + args.project().permalink + '?ref=facebook&title=' + args.project().name + '"][target="_blank"]', [
+                m('a.w-hidden-main.w-hidden-medium.btn.btn-medium.btn-fb.u-marginbottom-20[href="http://www.facebook.com/sharer/sharer.php?u=https://www.startio-staging.com/' + args.project().permalink + '?ref=facebook&title=' + args.project().name + '"][target="_blank"]', [
                     m('span.fa.fa-facebook'), ' Compartilhe'
                 ]),
-                m('a.w-hidden-main.w-hidden-medium.btn.btn-medium.btn-tweet.u-marginbottom-20[href="http://twitter.com/?status=Acabei de apoiar o projeto ' + args.project().name + ' htts://www.catarse.me/' + args.project().permalink + '?ref=twitterr"][target="_blank"]', [
+                m('a.w-hidden-main.w-hidden-medium.btn.btn-medium.btn-tweet.u-marginbottom-20[href="http://twitter.com/?status=I just support the project ' + args.project().name + ' https://www.startio-staging.com/' + args.project().permalink + '?ref=twitterr"][target="_blank"]', [
                     m('span.fa.fa-twitter'), ' Tweet'
                 ]),
             ]);

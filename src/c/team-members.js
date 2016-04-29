@@ -31,7 +31,7 @@ window.c.TeamMembers = (function(_, m, models) {
                                         m('img.thumb.big.u-round.u-marginbottom-10[src="' + member.img + '"]'),
                                         m('.fontweight-semibold.fontsize-base', member.name)
                                     ]),
-                                    m('.fontsize-smallest.fontcolor-secondary', 'Apoiou ' + member.total_contributed_projects + ' projetos')
+                                    m('.fontsize-smallest.fontcolor-secondary', 'Supported ' + member.total_contributed_projects + ' projects')
                                 ]);
                             })
                         ]);

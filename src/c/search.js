@@ -19,7 +19,7 @@ window.c.Search = ((m) => {
                             m('form#email-form', {action: action, method: method}, [
                                 m('.w-row', [
                                     m('.w-col.w-col-10.w-col-small-10.w-col-tiny-10', [
-                                        m('input[type="text"][name="pg_search"][placeholder="Busque projetos"]#pg_search_inside.w-input.text-field.negative.prefix')
+                                        m('input[type="text"][name="pg_search"][placeholder="Search projects"]#pg_search_inside.w-input.text-field.negative.prefix')
                                     ]),
                                     m('.w-col.w-col-2.w-col-small-2.w-col-tiny-2', [
                                         m('button.w-inline-block.btn.btn-dark.btn-attached.postfix', [
