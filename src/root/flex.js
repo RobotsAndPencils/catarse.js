@@ -10,7 +10,7 @@ window.c.root.Flex = (function(m, c, h, models) {
                 },
                 addDisqus = (el, isInitialized) => {
                     if (!isInitialized) {
-                        h.discuss('https://catarse.me/flex', 'flex_page');
+                        h.discuss('https://www.catarse-staging.com/en/flex', 'flex_page');
                     }
                 },
                 flexVM = m.postgrest.filtersVM({
@@ -160,14 +160,14 @@ window.c.root.Flex = (function(m, c, h, models) {
                                     m('.fontsize-jumbo.text-success.lineheight-loose', h.formatNumber(stats.total_projects_success, 0, 3)), m('p.start-stats.fontsize-base.fontcolor-negative', 'Project financed on Startio')
                                 ]),
                                 m('.w-col.w-col-4', [
-                                    m('.fontsize-jumbo.text-success.lineheight-loose', stats.total_contributed.toString().slice(0, 2) + ' milhões'), m('p.start-stats.fontsize-base.fontcolor-negative', 'Were invested in ideas published on Startio')
+                                    m('.fontsize-jumbo.text-success.lineheight-loose', stats.total_contributed.toString().slice(0, 2) + ' million'), m('p.start-stats.fontsize-base.fontcolor-negative', 'Were invested in ideas published on Startio')
                                 ])
                             ])
                         ])
                     ]),
                     m('.w-section.section.bg-blue-one.fontcolor-negative', [
                         m('.w-container', [
-                            m('.fontsize-large.u-text-center.u-marginbottom-20', 'Recomende o Catarse flex para amigos! '),
+                            m('.fontsize-large.u-text-center.u-marginbottom-20', 'Recommend Stario to your friends! '),
                             m('.w-row', [
                                 m('.w-col.w-col-2'),
                                 m('.w-col.w-col-8', [
@@ -175,13 +175,13 @@ window.c.root.Flex = (function(m, c, h, models) {
                                         m('.w-col.w-col-6.w-col-small-6.w-col-tiny-6.w-sub-col-middle', [
                                             m('div', [
                                                 m('img.icon-share-mobile[src=\'https://daks2k3a4ib2z.cloudfront.net/54b440b85608e3f4389db387/53a3f66e05eb6144171d8edb_facebook-xxl.png\']'),
-                                                m('a.w-button.btn.btn-large.btn-fb[href="http://www.facebook.com/sharer/sharer.php?u=https://www.catarse.me/flex?ref=facebook&title=' + encodeURIComponent('Discover the Startio Flex!') + '"][target="_blank"]', 'Compartilhar')
+                                                m('a.w-button.btn.btn-large.btn-fb[href="http://www.facebook.com/sharer/sharer.php?u=https://www.catarse.me/flex?ref=facebook&title=' + encodeURIComponent('Discover the Startio Flex!') + '"][target="_blank"]', 'Facebook')
                                             ])
                                         ]),
                                         m('.w-col.w-col-6.w-col-small-6.w-col-tiny-6', [
                                             m('div', [
                                                 m('img.icon-share-mobile[src=\'https://daks2k3a4ib2z.cloudfront.net/54b440b85608e3f4389db387/53a3f65105eb6144171d8eda_twitter-256.png\']'),
-                                                m('a.w-button.btn.btn-large.btn-tweet[href="http://twitter.com/?status=' + encodeURIComponent('Let us build a new type of crowdfunding! Register your email and find out how enter your project in Startio Flex!') + 'https://www.catarse.me/flex?ref=twitter"][target="_blank"]', 'Tuitar')
+                                                m('a.w-button.btn.btn-large.btn-tweet[href="http://twitter.com/?status=' + encodeURIComponent('Let us build a new type of crowdfunding! Register your email and find out how enter your project in Startio Flex!') + 'https://www.startio-staging.com/en/flex?ref=twitter"][target="_blank"]', 'Twitter')
                                             ])
                                         ])
                                     ])
