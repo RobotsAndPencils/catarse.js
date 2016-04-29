@@ -52,7 +52,7 @@ window.c.vms.projectFilters = ((m, h, moment) => {
                 filter: recent
             },
             near_me: {
-                title: 'New Me',
+                title: 'Near Me',
                 filter: nearMe
             }
         };

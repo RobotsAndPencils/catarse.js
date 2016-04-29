@@ -99,12 +99,6 @@ window.c.root.Flex = (function(m, c, h, models) {
                             ])
                         ])
                     ]),
-                    m('.w-section.section', [
-                        m('.w-container', [
-                            m('.w-editable.fontsize-larger.u-margintop-40.u-margin-bottom-40.u-text-center', 'Read about some of the first Flex Projects'),
-                            ctrl.projectsLoader() ? h.loader() : m.component(c.ProjectRow, {collection: ctrl.projects, ref: 'ctrse_flex', wrapper: '.w-row.u-margintop-40'})
-                        ])
-                    ]),
                     m('.w-section.divider'),
                     m('.w-section.section', [
                         m('.w-container', [
@@ -167,7 +161,7 @@ window.c.root.Flex = (function(m, c, h, models) {
                     ]),
                     m('.w-section.section.bg-blue-one.fontcolor-negative', [
                         m('.w-container', [
-                            m('.fontsize-large.u-text-center.u-marginbottom-20', 'Recommend Stario to your friends! '),
+                            m('.fontsize-large.u-text-center.u-marginbottom-20', 'Recommend Startio to your friends! '),
                             m('.w-row', [
                                 m('.w-col.w-col-2'),
                                 m('.w-col.w-col-8', [
@@ -175,7 +169,7 @@ window.c.root.Flex = (function(m, c, h, models) {
                                         m('.w-col.w-col-6.w-col-small-6.w-col-tiny-6.w-sub-col-middle', [
                                             m('div', [
                                                 m('img.icon-share-mobile[src=\'https://daks2k3a4ib2z.cloudfront.net/54b440b85608e3f4389db387/53a3f66e05eb6144171d8edb_facebook-xxl.png\']'),
-                                                m('a.w-button.btn.btn-large.btn-fb[href="http://www.facebook.com/sharer/sharer.php?u=https://www.catarse.me/flex?ref=facebook&title=' + encodeURIComponent('Discover the Startio Flex!') + '"][target="_blank"]', 'Facebook')
+                                                m('a.w-button.btn.btn-large.btn-fb[href="http://www.facebook.com/sharer/sharer.php?u=https://www.startio-staging.com/flex?ref=facebook&title=' + encodeURIComponent('Discover the Startio Flex!') + '"][target="_blank"]', 'Facebook')
                                             ])
                                         ]),
                                         m('.w-col.w-col-6.w-col-small-6.w-col-tiny-6', [
