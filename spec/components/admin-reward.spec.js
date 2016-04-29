@@ -15,7 +15,7 @@ describe('AdminReward', () => {
             });
 
             it('should render "no reward" text when reward_id is null', () => {
-                $output.should.contain('Apoio sem recompensa');
+                $output.should.contain('Contribution has no reward');
             });
         });
 

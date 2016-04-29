@@ -74,7 +74,7 @@ window.c.AdminInputAction = (function(m, h, c) {
                         ])
                     ] : [
                         m('.w-form-error[style="display:block;"]', [
-                            m('p', 'Houve um problema na requisição. ' + data.errorMessage)
+                            m('p', 'There was an error on your request. ' + data.errorMessage)
                         ])
                     ])
                 ]) : ''

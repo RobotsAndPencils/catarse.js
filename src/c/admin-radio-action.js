@@ -127,12 +127,12 @@ window.c.AdminRadioAction = (function(m, h, c, _) {
                                 m('label.w-form-label[for="r-' + index + '"]', '$' + radio.minimum_value)
                             ]);
                         }) : h.loader(),
-                        m('strong', 'Descrição'),
+                        m('strong', 'Description'),
                         m('p', ctrl.description()),
                         m('input.w-button.btn.btn-small[type="submit"][value="' + btnValue + '"]')
                     ] : (!ctrl.error()) ? [
                         m('.w-form-done[style="display:block;"]', [
-                            m('p', 'Recompensa alterada com sucesso!')
+                            m('p', 'Reward changes successful!')
                         ])
                     ] : [
                         m('.w-form-error[style="display:block;"]', [

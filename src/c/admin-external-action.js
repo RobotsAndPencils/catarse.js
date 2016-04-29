@@ -84,11 +84,11 @@ window.c.AdminExternalAction = ((function(m, h, c, _) {
                         m('input.w-button.btn.btn-small[type="submit"][value="' + btnValue + '"]')
                     ] : (!ctrl.error()) ? [
                         m('.w-form-done[style="display:block;"]', [
-                            m('p', 'Requisição feita com sucesso.')
+                            m('p', 'Request succeeded.')
                         ])
                     ] : [
                         m('.w-form-error[style="display:block;"]', [
-                            m('p', 'Houve um problema na requisição.')
+                            m('p', 'There was an error on your request.')
                         ])
                     ])
                 ]) : ''
