@@ -16,11 +16,11 @@ window.c.ProjectMode = ((m, c, h, _) => {
                 mode = project.mode,
                 modeImgSrc = (mode === 'aon') ? '/assets/aon-badge.png' : '/assets/flex-badge.png',
                 modeTitle = (mode === 'aon') ? 'All or Nothing ' : 'Flexible ',
-                goal = (_.isNull(project.goal) ? 'não definida' : h.formatNumber(project.goal)),
+                goal = (_.isNull(project.goal) ? 'not defined' : h.formatNumber(project.goal)),
                 tooltip = (el) => {
                     return m.component(c.Tooltip, {
                         el: el,
-                        text: (mode === 'aon') ? `Somente receberá os recursos se atingir ou ultrapassar a meta até o dia ${h.momentify(project.zone_expires_at, 'DD/MM/YYYY')}.` : 'O realizador receberá todos os recursos quando encerrar a campanha, mesmo que não tenha atingido esta meta.',
+                        text: (mode === 'aon') ? `You only receive the funding if you reach the target goal before the deadline on: ${h.momentify(project.zone_expires_at, 'DD/MM/YYYY')}.` : 'The project owner receives all the resources when the campaign ends, even if it has not reached this goal.',
                         width: 280
                     });
                 };

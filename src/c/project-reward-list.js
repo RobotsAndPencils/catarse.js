@@ -12,9 +12,9 @@ window.c.ProjectRewardList = ((m, h, _) => {
                         m('.fontsize-base.fontweight-semibold', 'For $ ' + h.formatNumber(reward.minimum_value) + ' or more'),
                         m('.fontsize-smaller.fontweight-semibold', h.pluralize(reward.paid_count, ' contribution', ' contributions')), (reward.maximum_contributions > 0 ? [
                             (reward.waiting_payment_count > 0 ? m('.maximum_contributions.in_time_to_confirm.clearfix', [
-                                m('.pending.fontsize-smallest.fontcolor-secondary', h.pluralize(reward.waiting_payment_count, ' contribution confirmation', ' contributions confirmation'))
+                                m('.pending.fontsize-smallest.fontcolor-secondary', h.pluralize(reward.waiting_payment_count, ' contribution awaiting confirmation', ' contributions awaiting confirmation'))
                             ]) : ''), (h.rewardSouldOut(reward) ? m('.u-margintop-10', [
-                                m('span.badge.badge-gone.fontsize-smaller', 'Sold Out')
+                                m('span.badge.badge-gone.fontsize-smaller', 'Out of stock')
                             ]) : m('.u-margintop-10', [
                                 m('span.badge.badge-attention.fontsize-smaller', [
                                     m('span.fontweight-bold', 'Limited'),
@@ -25,11 +25,11 @@ window.c.ProjectRewardList = ((m, h, _) => {
                     ]),
                     m('.fontsize-smaller.u-margintop-20', m.trust(h.simpleFormat(reward.description))), (!_.isEmpty(reward.deliver_at) ?
                         m('.fontsize-smaller', [
-                            m('b', 'Delivery Estimate: '),
+                            m('b', 'Expected delivery date: '),
                             h.momentify(reward.deliver_at, 'YYYY-MMM')
                         ]) : ''), (project().open_for_contributions && !h.rewardSouldOut(reward) ?
                         m('.project-reward-box-hover', [
-                            m('.project-reward-box-select-text.u-text-center', 'Select this reward')
+                            m('.project-reward-box-select-text.u-text-center', 'Select your reward')
                         ]) : '')
                 ]);
             }));

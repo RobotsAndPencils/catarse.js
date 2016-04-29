@@ -10,7 +10,7 @@ window.c.ProjectAbout = ((m, c, h) => {
                 };
             let fundingPeriod = () => {
                 return (project.is_published && h.existy(project.zone_expires_at)) ? m('.funding-period', [
-                    m('.fontsize-small.fontweight-semibold.u-text-center-small-only', 'Período de campanha'),
+                    m('.fontsize-small.fontweight-semibold.u-text-center-small-only', 'Funding period'),
                     m('.fontsize-small.u-text-center-small-only', `${h.momentify(project.zone_online_date)} - ${h.momentify(project.zone_expires_at)} (${onlineDays()} dias)`)
                 ]) : '';
             };
