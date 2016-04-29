@@ -65,7 +65,7 @@ window.c.ContributionActivities = ((m, h, models, _) => {
                             m('a', {href: project_link}, [
                                 m('img.thumb-author.u-round', {src: resource.thumbnail, width: 80}),
                             ]),
-                            m('img.thumb-author.u-round', {src: 'https://daks2k3a4ib2z.cloudfront.net/54b440b85608e3f4389db387/56d646f7710a7126338b46ff_logo-catarse-back-carrosel.png'}),
+                            m('img.thumb-author.u-round', {src: 'https://startio-staging.s3.amazonaws.com/cdn/logo-back-carrosel.png'}),
                             m('a', {href: project_link}, [
                                 m('img.thumb-author.u-round', {src: resource.project_thumbnail, width: 80, style: 'margin-right: 0;'}),
                             ])
