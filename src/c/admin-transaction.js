@@ -3,30 +3,30 @@ window.c.AdminTransaction = (function(m, h) {
         view: function(ctrl, args) {
             var contribution = args.contribution;
             return m('.w-col.w-col-4', [
-                m('.fontweight-semibold.fontsize-smaller.lineheight-tighter.u-marginbottom-20', 'Detalhes do apoio'),
+                m('.fontweight-semibold.fontsize-smaller.lineheight-tighter.u-marginbottom-20', 'Contribution details'),
                 m('.fontsize-smallest.lineheight-looser', [
-                    'Valor: $' + h.formatNumber(contribution.value, 2, 3),
+                    'Value: $' + h.formatNumber(contribution.value, 2, 3),
                     m('br'),
-                    'Taxa: $' + h.formatNumber(contribution.gateway_fee, 2, 3),
+                    'Fee: $' + h.formatNumber(contribution.gateway_fee, 2, 3),
                     m('br'),
-                    'Aguardando Confirmação: ' + (contribution.waiting_payment ? 'Sim' : 'Não'),
+                    'Awaiting confirmation ' + (contribution.waiting_payment ? 'Yes' : 'No'),
                     m('br'),
-                    'Anônimo: ' + (contribution.anonymous ? 'Sim' : 'Não'),
+                    'Anonymous: ' + (contribution.anonymous ? 'Yes' : 'No'),
                     m('br'),
-                    'Id pagamento: ' + contribution.gateway_id,
+                    'Payment Id : ' + contribution.gateway_id,
                     m('br'),
-                    'Apoio: ' + contribution.contribution_id,
+                    'Contrubutions: ' + contribution.contribution_id,
                     m('br'),
-                    'Chave: \n',
+                    'Key: \n',
                     m('br'),
                     contribution.key,
                     m('br'),
-                    'Meio: ' + contribution.gateway,
+                    'Gateway: ' + contribution.gateway,
                     m('br'),
-                    'Operadora: ' + (contribution.gateway_data && contribution.gateway_data.acquirer_name),
+                    'Operator: ' + (contribution.gateway_data && contribution.gateway_data.acquirer_name),
                     m('br'), (function() {
                         if (contribution.is_second_slip) {
-                            return [m('a.link-hidden[href="#"]', 'Boleto bancário'), ' ', m('span.badge', '2a via')];
+                            return [m('a.link-hidden[href="#"]', 'Pay slip'), ' ', m('span.badge', '2a via')];
                         }
                     }()),
                 ])

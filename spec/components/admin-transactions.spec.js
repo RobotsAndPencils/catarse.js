@@ -18,8 +18,8 @@ describe('AdminTransaction', () => {
 
     describe('view', () => {
         it('should render details about contribution', () => {
-            expect($output.contains('Valor: $50.00')).toBeTrue();
-            expect($output.contains('Meio: MoIP')).toBeTrue();
+            expect($output.contains('Value: $50.00')).toBeTrue();
+            expect($output.contains('Gateway: MoIP')).toBeTrue();
         });
     });
 });

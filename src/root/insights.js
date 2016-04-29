@@ -102,8 +102,8 @@ window.c.root.Insights = ((m, c, h, models, _, I18n) => {
                     return m.component(c.Tooltip, {
                         el: el,
                         text: [
-                            'Tells where your project support came from. Learn how to use this table and how to better plan your communication actions ',
-                            m(`a[href="${I18n.t('ref_table.help_url', I18nScope())}"][target='_blank']`, 'aqui.')
+                            'Tells where your project support came from',
+                            m(``, '. ')
                         ],
                         width: 380
                     });
