@@ -86,7 +86,7 @@ window.c.h = ((m, moment, I18n) => {
 
                 const re = '\\d(?=(\\d{' + (x || 3) + '})+' + (n > 0 ? '\\D' : '$') + ')',
                     num = number.toFixed(Math.max(0, ~~n));
-                return num //(c ? num.replace('.', c) : num).replace(new RegExp(re, 'g'), '$&' + (s || ','));
+                return num; //(c ? num.replace('.', c) : num).replace(new RegExp(re, 'g'), '$&' + (s || ','));
             };
         },
         formatNumber = generateFormatNumber('.', ','),
