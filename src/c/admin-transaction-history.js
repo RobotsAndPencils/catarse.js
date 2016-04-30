@@ -40,7 +40,7 @@ window.c.AdminTransactionHistory = (function(m, h, _) {
 
         view: function(ctrl) {
             return m('.w-col.w-col-4', [
-                m('.fontweight-semibold.fontsize-smaller.lineheight-tighter.u-marginbottom-20', 'Histórico da transação'),
+                m('.fontweight-semibold.fontsize-smaller.lineheight-tighter.u-marginbottom-20', 'Transaction history'),
                 ctrl.orderedEvents.map(function(cEvent) {
                     return m('.w-row.fontsize-smallest.lineheight-looser.date-event', [
                         m('.w-col.w-col-6', [
