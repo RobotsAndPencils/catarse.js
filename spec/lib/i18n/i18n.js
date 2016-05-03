@@ -49,7 +49,7 @@
 
   // Set default number format.
   var NUMBER_FORMAT = {
-      precision: 3
+      precision: 2
     , separator: ","
     , delimiter: "."
     , strip_insignificant_zeros: false
@@ -68,7 +68,7 @@
   // Set default percentage format.
   var PERCENTAGE_FORMAT = {
       unit: "%"
-    , precision: 3
+    , precision: 2
     , format: "%n%u"
     , separator: "."
     , delimiter: ""
