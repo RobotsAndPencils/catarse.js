@@ -50,8 +50,8 @@
   // Set default number format.
   var NUMBER_FORMAT = {
       precision: 3
-    , separator: "."
-    , delimiter: ","
+    , separator: ","
+    , delimiter: "."
     , strip_insignificant_zeros: false
   };
 
@@ -61,8 +61,8 @@
     , precision: 2
     , format: "%u%n"
     , sign_first: true
-    , delimiter: ","
-    , separator: "."
+    , delimiter: "."
+    , separator: ","
   };
 
   // Set default percentage format.
